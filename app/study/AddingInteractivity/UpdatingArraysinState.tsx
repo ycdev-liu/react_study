@@ -69,7 +69,7 @@ export default function UpdatingArraysinState(){
                         </button>
 
                         <button
-                        onClick={()=>deleteitem(artist.id)}
+                        onClick={deleteitem(artist.id)}
                         >
                             deleteitem
 
