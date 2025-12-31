@@ -16,11 +16,14 @@ import App5 from "./App5";
 
 
 
-import UpdatingArraysinState from "./study/AddingInteractivity/updatingArraysinState";
+import UpdatingArraysinState from "./study/AddingInteractivity/UpdatingArraysinState";
 
 import PlayBall from "./study/AddingInteractivity/PlayBall";
 import ReplaceItem from "./study/AddingInteractivity/ReplaceItem"
 import InsertItem from "./study/AddingInteractivity/InsertItem"
+
+// 前后端运行实例
+import TodoListWithAPI from "./TodoListWithAPI";
 
 export default function Home() {
   const [todos,setTodos] =  useState<Todo[]>([])
@@ -72,6 +75,11 @@ const getFilterTodos =() =>{
 
   return (
     <div>
+    <TodoListWithAPI/>
+    <p>{"-".repeat(100)}</p>
+
+
+
    <h1>TodoList 综合用例</h1>
    <AddTodo addTodo={addTodo}></AddTodo>
    <TodoList 
